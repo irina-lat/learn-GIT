@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+</head>
+<body>
 	<div>My name is Irina</div>
 	<div>my tower is Moscow</div>
 	<ul>
@@ -19,16 +21,21 @@
 	<ul>
 		<li>git config user.name (узнать имя пользователя)</li>
 		<li>git config user.email (узнать почту пользователя)</li>
+	</ul>
+	<ul>
+		<li><b>удаление файлов и папок</b>/файл ничего не пишется/папка -r/из Гита --cached</li>
 		<li>
+			<span>Удаление папки из Гита</span>
 			git rm -r --cached .idea
 			git commit -m "Removed .idea"
 			git push
-			(удалить только из репозитория папку .idea, но не из локального)
-			(потом в гит ингоре написать /.idea и запушить)
+		</li>
+		<li>
+			<span>Удаление папки из Гита и из файловой сист.</span>
+			git rm file1.txt
+			git commit -m "remove file1.txt"
+			git push
 		</li>
 	</ul>
-</head>
-<body>
-	
 </body>
 </html>
